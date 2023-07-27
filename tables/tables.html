@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <style>
+      table,
+      th,
+      td,
+      tr {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tables</h1>
+    <hr />
+    <table>
+      <tr>
+        <th>S.no</th>
+        <th>Subject</th>
+        <th>Marks</th>
+        <th>P/F</th>
+        <th>Grade</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Subject</td>
+        <td>Marks</td>
+        <td>P/F</td>
+        <td>Grade</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Subject</td>
+        <td>Marks</td>
+        <td>P/F</td>
+        <td>Grade</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Subject</td>
+        <td>Marks</td>
+        <td>P/F</td>
+        <td>Grade</td>
+      </tr>
+    </table>
+
+    <hr />
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>courses</th>
+      </tr>
+      <tr>
+        <td rowspan="3">Engineering</td>
+        <td>CSE</td>
+      </tr>
+      <tr>
+        <td>ECE</td>
+      </tr>
+      <tr>
+        <td>EEE</td>
+      </tr>
+      <tr>
+        <td colspan="2">xxxxxx</td>
+      </tr>
+    </table>
+  </body>
+</html>
