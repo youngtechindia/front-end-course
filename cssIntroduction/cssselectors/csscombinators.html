@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS combinaors</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid black;
+      }
+
+      div p {
+        background: yellow;
+      }
+
+      #element2 ~ p {
+        background-color: aqua;
+      }
+
+      #element1 > p {
+        background-color: rgb(94, 255, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div id="element1">
+        sample div with id element1
+        <section>
+          <p>inside section</p>
+        </section>
+
+        <p>paragraph inside element1</p>
+        <p>paragraph2 inside element1</p>
+      </div>
+      <div id="element2">sample div with id element2</div>
+      <p id="element3">sample paragraph with id element3</p>
+    </section>
+  </body>
+</html>
