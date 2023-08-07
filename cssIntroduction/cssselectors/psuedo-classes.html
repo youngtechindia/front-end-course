@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psuedo-class selectors</title>
+    <style>
+      p,
+      div:hover {
+        color: rgb(38, 11, 137);
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      a:link {
+        color: brown;
+      }
+      a:visited {
+        color: rgb(226, 211, 43);
+      }
+
+      p:first-child {
+        color: red;
+      }
+      span:first-child {
+        color: rgb(0, 255, 42);
+      }
+
+      p i:first-child {
+        color: brown;
+      }
+
+      input {
+        width: 400px;
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      input:focus {
+        width: 600px;
+        border: 5px solid red;
+      }
+
+      input:disabled {
+        border: 5px solid rgb(0, 255, 47);
+      }
+      p:nth-child(2) {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <span>Psuedo selector example</span>
+
+    <p>Psuedo selector example2</p>
+    <div>
+      <span>span tag</span>
+      <p>xyz para</p>
+      <p>abc</p>
+      <p>first para inside div</p>
+      Psuedo selector example2
+    </div>
+
+    <section>
+      <p>first para inside section</p>
+      <p>second para inside section</p>
+    </section>
+
+    <a href="https://firebase.google.com/">Firebase</a>
+    <a href="csscombinators.html"> combinators selectors</a>
+
+    <p>
+      <i>i tag</i><br />
+      <i>i tag2</i>
+    </p>
+    <p>
+      <span></span>
+      <i>i tag second para</i><br />
+      <i>i tag2</i>
+    </p>
+    <div>
+      <i>i tag in div</i>
+    </div>
+    <br />
+    <input type="text" />
+
+    <input type="text" disabled />
+  </body>
+</html>
