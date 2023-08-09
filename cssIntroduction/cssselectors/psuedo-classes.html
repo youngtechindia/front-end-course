@@ -32,13 +32,16 @@
 
       input {
         width: 400px;
+        height: 20px;
         padding: 10px;
         border-radius: 10px;
       }
 
       input:focus {
         width: 600px;
+        height: 30px;
         border: 5px solid red;
+        transition: width 1s, height 1s, transform 2s;
       }
 
       input:disabled {

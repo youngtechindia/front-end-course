@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psuedo Elements</title>
+    <style>
+      p::first-letter {
+        font-size: 30px;
+      }
+      p::first-line {
+        color: green;
+      }
+
+      p::after {
+        content: ">>";
+      }
+
+      p::before {
+        content: "***";
+      }
+
+      p::selection {
+        background-color: yellow;
+      }
+
+      input::placeholder {
+        color: red;
+      }
+
+      /* selector[attribute="name"] */
+      input[placeholder="name"] {
+        border: 5px solid red;
+      }
+
+      input[disabled] {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum is placeholder text commonly used in the graphic, print, and
+      publishing industries for previewing layouts and visual mockups. Lorem
+      ipsum is placeholder text commonly used in the graphic, print, and
+      publishing industries for previewing layouts and visual mockups. Lorem
+      ipsum is placeholder text commonly used in the graphic, print, and
+      publishing industries for previewing layouts and visual mockups. Lorem
+      ipsum is placeholder text commonly used in the graphic, print, and
+      publishing industries for previewing layouts and visual mockups. Lorem
+      ipsum is placeholder text commonly used in the graphic, print, and
+      publishing industries for previewing layouts and visual mockups.Lorem
+      ipsum is placeholder text commonly used in the graphic, print, and
+      publishing industries for previewing layouts and visual mockups.
+    </p>
+    <hr />
+    <div>
+      Lorem ipsum is placeholder text commonly used in the graphic, print, and
+      publishing industries for previewing layouts and visual mockups. Lorem
+      ipsum is placeholder text commonly used in the graphic, print, and
+      publishing industries for previewing layouts and visual mockups. Lorem
+      ipsum is placeholder text commonly used in the graphic, print, and
+      publishing industries for previewing layouts and visual mockups. Lorem
+      ipsum is placeholder text commonly used in the graphic, print, and
+      publishing industries for previewing layouts and visual mockups. Lorem
+      ipsum is placeholder text commonly used in the graphic, print, and
+      publishing industries for previewing layouts and visual mockups.Lorem
+      ipsum is placeholder text commonly used in the graphic, print, and
+      publishing industries for previewing layouts and visual mockups.
+    </div>
+    <input type="text" placeholder="name" />
+
+    <input type="text" disabled />
+  </body>
+</html>
