@@ -12,25 +12,27 @@
       #div1 {
         background-color: red;
         /* position: static; */
-        position: relative;
-        left: 300px;
+        position: absolute;
+        z-index: 99;
+        left: 50px;
       }
       #div2 {
         background-color: green;
-        position: sticky;
-
-        top: 50px;
+        position: absolute;
+        z-index: 100;
+        opacity: 0.4;
+        left: 100px;
       }
       #div3 {
         background-color: blue;
-        position: static;
+        position: absolute;
+        z-index: 88;
+        left: 20px;
       }
-      /* #div4 {
+      #div4 {
         background-color: yellow;
-        position: fixed;
-        left: 400px;
-        top: 500px;
-      } */
+        position: absolute;
+      }
 
       .parent {
         border: 1px solid #000;
@@ -39,10 +41,18 @@
         background: gray;
         position: relative;
       }
+      #overlay-div {
+        width: 90vw;
+        height: 90vh;
+        background-color: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        z-index: 999;
+      }
     </style>
   </head>
   <body>
     <!-- <div class="parent"> -->
+    <div id="overlay-div"></div>
     <div id="div1">div1</div>
     <!-- </div> -->
 
