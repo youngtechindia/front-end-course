@@ -1,0 +1,19 @@
+@media screen and (max-width: 768px) {
+  div {
+    background-color: red;
+    background-image: url("../icons/cricket.jpg");
+    width: 45%;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 360px) {
+  div {
+    background-color: rgb(78, 213, 44);
+    width: 100%;
+  }
+  h1 {
+    font-size: 10px;
+  }
+}
