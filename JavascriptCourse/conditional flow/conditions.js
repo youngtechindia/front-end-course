@@ -16,37 +16,21 @@ if (operation == "sum") {
 } else if (operation == "mul") {
   var d = a * b;
   console.log("mul: " + d);
-} else if(operation==""){
-
+} else if (operation == "") {
 } else {
-
 }
 
-
-switch(operation){
-case "sum": var c = a + b;
-console.log("sum: " + c);
-break;
-case "mul": var d = a * b;
-console.log("mul: " + d);
-break;
-default: console.log(">>>>>>> de");
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+switch (operation) {
+  case "sum":
+    var c = a + b;
+    console.log("sum: " + c);
+    break;
+  case "mul":
+    var d = a * b;
+    console.log("mul: " + d);
+    break;
+  default:
+    console.log(">>>>>>> de");
 }
 
 //For multiplication
