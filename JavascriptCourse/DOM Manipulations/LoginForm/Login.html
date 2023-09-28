@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="login.js"></script>
+    <style>
+      body {
+        background-image: url("https://wallpaperaccess.com/full/5927911.gif");
+        font-family: sans-serif;
+      }
+      .login-container {
+        width: 500px;
+        height: 500px;
+        background-color: #fff;
+        border-radius: 5px;
+        margin-top: 40px;
+        float: right;
+        margin-right: 100px;
+        padding: 50px;
+      }
+      h2 {
+        font-size: 35px;
+        font-weight: 100;
+        margin-bottom: 15px;
+      }
+      a {
+        color: #0975a4;
+      }
+
+      input {
+        display: block;
+        margin-top: 10px;
+        width: 90%;
+        height: 50px;
+      }
+
+      input::placeholder {
+        font-weight: 700;
+        font-size: 16px;
+        color: #000;
+        padding-left: 10px;
+      }
+      .sign-in {
+        margin-top: 10px;
+        width: 90%;
+        background-color: black;
+        cursor: pointer;
+        color: #fff;
+        padding: 20px;
+        font-size: 15px;
+        font-weight: 700;
+      }
+      .error-text {
+        color: red;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="login-container">
+      <h2>Sign in</h2>
+      <p>New to YoungTechIndia? <a href="#">Create an account</a></p>
+      <!-- <form> -->
+      <input type="text" id="username" placeholder="User Name or Customer #" />
+      <span class="error-text" id="userError"></span>
+      <input type="password" id="password" placeholder="Password" />
+      <span class="error-text" id="passwordError"></span>
+      <button class="sign-in" onclick="login()">Sign In</button>
+      <!-- </form> -->
+    </section>
+  </body>
+</html>

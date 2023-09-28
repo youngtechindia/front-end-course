@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <script src="dom.js"></script>
+    <style>
+      #main-content {
+        width: 100%;
+        height: 200px;
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-content">Sample text for Dom Manipulations</div>
+    <button onclick="clickedOnDiv()">Change Text</button>
+    <br />
+    <br />
+    <br />
+    <!--- Getting value from input -->
+    <input type="text" id="sampleInput" />
+    <span id="inputValue">sample</span>
+    <button onclick="getInputValue()">get InputValue</button>
+  </body>
+</html>

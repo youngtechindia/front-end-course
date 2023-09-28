@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <script src="events.js"></script>
+  </head>
+  <body>
+    <input type="text" onblur="onBlurEvent()" />
+    <select onchange="dropdownChange()">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+    </select>
+
+    <input type="text" onkeypress="keypressed()" />
+
+    <button
+      onmouseover="mouseOverBtn(1)"
+      onclick="addItem()"
+      style="width: 300px"
+    >
+      button1
+    </button>
+
+    <button
+      onmouseover="mouseOverBtn(2)"
+      onclick="addItem()"
+      style="width: 300px"
+    >
+      button2
+    </button>
+
+    <!-- <button onmouseover="mouseOverBtn()" style="width: 300px">
+      Mouse over item
+    </button> -->
+  </body>
+</html>
