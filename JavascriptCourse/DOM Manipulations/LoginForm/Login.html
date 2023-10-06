@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <script src="login.js"></script>
+
     <style>
       body {
         background-image: url("https://wallpaperaccess.com/full/5927911.gif");
@@ -56,6 +56,10 @@
         color: red;
         font-size: 12px;
       }
+      .sign-in:disabled {
+        background-color: #5b5f6138;
+        cursor: default;
+      }
     </style>
   </head>
   <body>
@@ -63,12 +67,25 @@
       <h2>Sign in</h2>
       <p>New to YoungTechIndia? <a href="#">Create an account</a></p>
       <!-- <form> -->
-      <input type="text" id="username" placeholder="User Name or Customer #" />
+      <input
+        type="text"
+        id="username"
+        placeholder="User Name or Customer #"
+        onkeyup="validateLogin()"
+      />
       <span class="error-text" id="userError"></span>
-      <input type="password" id="password" placeholder="Password" />
+      <input
+        type="password"
+        id="password"
+        placeholder="Password"
+        onkeyup="validateLogin()"
+      />
       <span class="error-text" id="passwordError"></span>
-      <button class="sign-in" onclick="login()">Sign In</button>
+      <button class="sign-in" id="loginBtn" onclick="login()" disabled>
+        Sign In
+      </button>
       <!-- </form> -->
     </section>
   </body>
+  <script src="login.js"></script>
 </html>
